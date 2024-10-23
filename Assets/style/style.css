@@ -5,14 +5,32 @@
 }
 
 body{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}  
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} 
+
+/* custom-properties */
+:root{
+  --first-color: #0061ff;
+  --second-color: #f0f0f0;
+}
+
+
 
 ul{
   list-style: none;
 }
+
+a{
+  text-decoration: none;
+}
+
 img{
   max-width: 100%;
+}
+
+h1{
+  font-size: 80px;
+  font-weight: 900;
 }
 
 /* utilities */
@@ -26,21 +44,47 @@ img{
 
 /* /utilities */
 
+
 /* header */
+
+/* header-top */
+
 .header-top{
-  padding: 30px 0;
+  background-color: var(--second-color);
 }
 
 .row.flex-box{
   justify-content: space-between;
 }
-.column.flex-box{
-  max-width: 500px;
+
+.header-top li{
+padding: 25px 15px;
+}
+
+.header-top li a{
+  color: black;
 
 }
+.header-top li .top-link{
+  padding: 35px 0;
+}
+
+.header-top li:hover .top-link{
+  border-bottom: 3px solid black;
+}
+
+.header-top ul .button a{
+  color: white;
+  padding: 10px 15px;
+  background-color: var(--first-color);
+}
+/* /header-top */
+
+/* header-bottom */
 .header-bottom{
-  height: 740px;
   padding-top: 100px;
+  max-height: 760px;
+  background-color: #b4d0e7;
 }
 
 .jumbotron{
@@ -60,6 +104,23 @@ img{
   margin: 0 auto;
   margin-top: 130px;
 }
+
+.content{
+  margin-top: 40px;
+}
+.jumbotron .jumbo-left .button{
+  color: white;
+  padding: 10px 15px;
+  background-color: var(--first-color);
+}
+
+.jumbotron .jumbo-left p{
+  margin: 30px 0;
+}
+.jumbo-right img{
+  margin-top: 30px;
+}
+
 
 .container.card{
   max-width: 300px;
@@ -93,6 +154,10 @@ section:nth-child(2){
   padding: 0 25px;
   margin: 0 auto;
 }
+
+/* /main */
+
+/* footer */
 footer{
   padding: 100px 0;
 }
