@@ -36,6 +36,9 @@ h1{
 h2{
   font-size: 43px;
 }
+h4{
+  padding-top: 30px;
+}
 
 /* utilities */
 .debug{
@@ -75,7 +78,8 @@ h2{
   border-bottom: 3px solid black;
 }
 
-.header-top ul .button a{
+
+.button{
   color: white;
   padding: 10px 15px;
   background-color: var(--first-color);
@@ -100,11 +104,6 @@ h2{
 
 .content{
   margin-top: 40px;
-}
-.jumbotron .jumbo-left .button{
-  color: white;
-  padding: 10px 15px;
-  background-color: var(--first-color);
 }
 
 .jumbotron .jumbo-left p{
@@ -170,10 +169,16 @@ h2{
   text-align: center;
 }
 .card ul{
-  --icon-space: 1.3em; 
+  --icon-space: 1.3em;
+  padding: 30px 0; 
+}
+.card p:nth-last-of-type(1){
+  padding-top: 30px;
 }
 
+
 .card ul li{
+  padding: 15px;
   padding-left: var(--icon-space);
 }
 .card ul li::before{
@@ -195,6 +200,13 @@ h2{
 .card ul li.check::before{
   content: "\f00c";
   color: var(--first-color);
+}
+
+.line{
+  display:inline-block;
+  width: 45px;
+  border-bottom: 1px solid black;
+  padding-top: 40px;
 }
 
 /* /cards */
