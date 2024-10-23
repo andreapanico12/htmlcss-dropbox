@@ -23,6 +23,7 @@ ul{
 
 a{
   text-decoration: none;
+  color: black;
 }
 
 img{
@@ -39,7 +40,11 @@ h2{
 h4{
   padding-top: 30px;
 }
-
+h6{
+  padding: 12px 0;
+  font-size: 13px;
+  font-weight: 500;
+}
 /* utilities */
 .debug{
   border: 1px solid black;
@@ -69,10 +74,6 @@ h4{
   height: 80px;
 }
 
-.header-top li a{
-  color: black;
-
-}
 
 .header-top li.top-link:hover{
   border-bottom: 3px solid black;
