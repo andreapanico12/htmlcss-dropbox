@@ -93,4 +93,21 @@ section:nth-child(2){
   padding: 0 25px;
   margin: 0 auto;
 }
+footer{
+  padding: 100px 0;
+}
+.navbar{
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+
+footer .flex-box{
+  justify-content: space-between;
+
+}
+
+footer .flex-box nav{
+  max-width: 200px;
+
+}
