@@ -26,7 +26,7 @@ img{
 
 /* /utilities */
 
-
+/* header */
 .header-top{
   padding: 30px 0;
 }
@@ -51,3 +51,26 @@ img{
 .jumbo-left{
   max-width: 360px;
 }
+/* /header */
+
+/* main */
+
+.container-main{
+  max-width: 1030px;
+  margin: 0 auto;
+  margin-top: 130px;
+}
+
+.container.card{
+  max-width: 300px;
+}
+
+.container{
+  border: 1px groove black;
+}
+
+.container h6{
+  border-bottom: 1px groove black;
+  text-align: center;
+}
+
