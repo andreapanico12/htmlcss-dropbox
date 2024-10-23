@@ -149,7 +149,7 @@ h2{
   padding-top: 50px;
 }
 
-/* card */
+/* cards */
 .container.card{
   max-width: 300px;
 }
@@ -169,7 +169,35 @@ h2{
   border-bottom: 1px groove black;
   text-align: center;
 }
+.card ul{
+  --icon-space: 1.3em; 
+}
 
+.card ul li{
+  padding-left: var(--icon-space);
+}
+.card ul li::before{
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: calc( var(--icon-space) * -1 );
+  width: var(--ic on-space);
+  padding-right: 5px;
+}
+.card ul li.user::before{
+  content: "\f007";
+}
+.card ul li.folder::before{
+  content: "\f07b";
+}
+.card ul li.share::before{
+  content: "\f1e0";
+}
+.card ul li.check::before{
+  content: "\f00c";
+  color: var(--first-color);
+}
+
+/* /cards */
 
 section:nth-child(2){
   padding-top: 140px;
