@@ -32,6 +32,9 @@ h1{
   font-size: 80px;
   font-weight: 900;
 }
+h2{
+  font-size: 43px;
+}
 
 /* utilities */
 .debug{
@@ -95,15 +98,6 @@ padding: 25px 15px;
 .jumbo-left{
   max-width: 360px;
 }
-/* /header */
-
-/* main */
-
-.container-main{
-  max-width: 1030px;
-  margin: 0 auto;
-  margin-top: 130px;
-}
 
 .content{
   margin-top: 40px;
@@ -121,9 +115,51 @@ padding: 25px 15px;
   margin-top: 30px;
 }
 
+/* /header */
 
+/* main */
+
+.container-main{
+  max-width: 1030px;
+  margin: 0 auto;
+  margin-top: 130px;
+}
+.fatturazione span::before{
+  content: '';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 5px solid var(--first-color);
+  line-height: 10px;
+  vertical-align: middle;
+}
+
+.fatturazione span:last-child::before{
+  border: 2px solid grey;
+  height: 14px;
+  width: 14px;
+}
+.fatturazione{
+  margin-top: 50px;
+}
+.fatturazione span{
+  padding-right: 60px;
+}
+.plans{
+  padding-top: 50px;
+}
+
+/* card */
 .container.card{
   max-width: 300px;
+}
+.container.card div{
+  padding: 0 30px;
+}
+
+.card h3{
+  padding: 20px 0;
 }
 
 .container{
@@ -134,6 +170,7 @@ padding: 25px 15px;
   border-bottom: 1px groove black;
   text-align: center;
 }
+
 
 section:nth-child(2){
   padding-top: 140px;
